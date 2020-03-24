@@ -26,9 +26,9 @@ public class RepeatedCharacter {
 			return '0';
 		char[] array = input.toCharArray();
 		Arrays.sort(array);
-		int count = 1;
+		int count = 0;
 		int max = 0;
-		char maxChar = 0;
+		char maxChar = '0';
 		for (int i = 1; i < array.length; i++) {
 			if (array[i] == array[i - 1]) {
 				count++;
@@ -38,7 +38,7 @@ public class RepeatedCharacter {
 					maxChar = array[i - 1];
 
 				}
-				count = 1;
+				count = 0;
 			}
 		}
 		if (count > max) {
