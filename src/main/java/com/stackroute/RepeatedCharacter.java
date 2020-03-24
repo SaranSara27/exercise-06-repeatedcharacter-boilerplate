@@ -10,7 +10,14 @@ public class RepeatedCharacter {
 		// Use Scanner to get input from console
 		Scanner scanner = new Scanner(System.in);
 		String input = scanner.nextLine();
-		System.out.println(findRepeatedCharacter(input));
+		Character character=findRepeatedCharacter(input);
+		if(character.equals('0')) {
+			System.out.println("No characters repeated");
+		}
+		else {
+			System.out.println(character);
+		}
+		
 
 	}
 
